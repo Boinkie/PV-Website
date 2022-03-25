@@ -70,6 +70,7 @@ html{
     color:#fff;
     font-size: 23px;
     cursor: pointer;
+    display: none;
 }
 .scroll-up-btn{
     position: fixed;
