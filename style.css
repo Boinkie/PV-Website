@@ -95,7 +95,7 @@ html{
 }
 
 /* home section styling */
-.home, .thanks{
+.home{
     display: flex;
     background: url("background3.jpg") no-repeat center;
     height: 100vh;
@@ -179,21 +179,22 @@ section .title::after{
     background: #fff;
     transform: translateX(-50%);
 }
-/* about section styling */
-.about, .ziele, .contact, footer{
+.about, .ziele, .contact, .wahl, footer{
     font-family: 'Poppins', sans-serif;
-}
-
-.about .title::after{
-    content: "wer ich bin";
 }
 .about .about-content,
 .ziele .ziele-content,
-.contact .contact-content{
+.contact .contact-content,
+.wahl .wahl-content{
     display: flex;
     flex-wrap: wrap;
     /* align-items: center; */
     justify-content: space-between;
+}
+
+/* about section styling */
+.about .title::after{
+    content: "wer ich bin";
 }
 .about .about-content .left{
     width: 45%;
@@ -290,6 +291,44 @@ section .title::after{
     color: #fff;
 }
 
+/* wahl section styling */
+.wahl{
+    color: #fff;
+    background:rgb(149, 162, 221);
+}
+.wahl h2{
+    color: #111;
+}
+.wahl .title::after{
+    content: "25.04 10:00";
+    background:rgb(149, 162, 221);
+}
+.wahl .wahl-content .left{
+    width: 55%;
+}
+.wahl .wahl-content .left .text{
+    font-size: 25px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+.wahl .wahl-content .left .text span{
+    color: crimson;
+}
+.wahl .wahl-content .left p{
+    text-align: justify;
+}
+.wahl .wahl-content .right{
+    width: 45%;
+}
+.wahl .wahl-content .right img{
+    height: 400px;
+    width: 400px;
+    object-fit: cover;
+    object-position: right top;
+    border-radius: 6px;
+    margin-left: 40px;
+}
+
 /* contact section styling */
 .contact .title::after{
     content: "email";
@@ -318,7 +357,7 @@ section .title::after{
 }
 .contact .contact-content .row i{
     font-size: 25px;
-    color: rgb(119, 134, 199);
+    color:rgb(119, 134, 199);
 }
 .contact .contact-content .info .head{
     font-weight: 500;
@@ -410,7 +449,8 @@ footer span a:hover{
     }
 }
 @media (max-width: 1189px){
-    .about .about-content .left img{
+    .about .about-content .left img,
+    .wahl .wahl-content .right img{
         height: 350px;
         width: 350px;
     }
@@ -492,6 +532,19 @@ footer span a:hover{
     .contact .contact-content .column{
         width: 100%;
         margin-bottom: 35px;
+    }
+    -------
+    .wahl .wahl-content .column{
+        width:100%;
+        margin-bottom: 35px;
+    }
+    .wahl .wahl-content .right{
+        display: flex;
+        justify-content: center;
+        margin: 20px auto 60px;
+    }
+    .wahl .wahl-content .left{
+        flex: 100%;
     }
     
 }
