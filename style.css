@@ -62,7 +62,7 @@ html{
     color:crimson;
 }
 .navbar.sticky .menu li a:hover{
-    color: #fff;
+    color: crimson;
 }
 
 /* menu btn styling */
@@ -474,9 +474,6 @@ footer span a:hover{
     }
 }
 @media (max-width: 904px){
-    .max-width{
-        padding: 0 50px;
-    }
     .menu-btn{
         display: block;
         z-index: 999;
