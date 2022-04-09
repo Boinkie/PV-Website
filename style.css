@@ -727,3 +727,8 @@ footer span a:hover{
         height: 520px;
     }
 }
+@media (max-width: 450px){
+    .praktisch .praktisch-content .card{
+    height: 600px;
+    }
+}
