@@ -180,7 +180,7 @@ section .title::after{
     background: #fff;
     transform: translateX(-50%);
 }
-.about, .ziele, .contact, .wahl, .praktisch, .kandidatur, footer{
+.about, .ziele, .contact, .wahl, .praktisch, .kandidatur, .vorbild, footer{
     font-family: 'Poppins', sans-serif;
 }
 .about .about-content,
@@ -188,7 +188,8 @@ section .title::after{
 .contact .contact-content,
 .wahl .wahl-content,
 .praktisch .praktisch-content,
-.kandidatur .kandidatur-content{
+.kandidatur .kandidatur-content,
+.vorbild .vorbild-content{
     display: flex;
     flex-wrap: wrap;
     /* align-items: center; */
@@ -445,6 +446,51 @@ h2 {
     object-position: right top;
     border-radius: 6px;
     margin-left: 40px;
+}
+
+/* vorbild section styling */
+.vorbild{
+    color: #fff;
+    background:#222;
+}
+.vorbild h2{
+    color: #fff;
+}
+.vorbild .title::before{
+    background: #fff;
+}
+.vorbild .title::after{
+    background: #222;
+    content:"Vorbild";
+}
+
+.vorbild .vorbild-content{
+    text-align: center;
+}
+.vorbild .vorbild-content img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 70%;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+.vorbild .vorbild-content .text{
+    color:rgb(149, 162, 221);
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+.vorbild .vorbild-content a{
+    color:crimson;
+    font-size: 20px;
+    font-weight: 600;
+}
+.vorbild .vorbild-content a:hover{
+    color:rgb(119, 134, 199);
+    background: none;
 }
 
 /* contact section styling */
